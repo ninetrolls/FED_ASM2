@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Kalnia:wght@300&family=Kavivanar&family=Orbitron:wght@700&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+    <!--heading-->
+    <header>
+        <i class='bx bxl-sass'style='font-size: 60px;'></i>Sinaturehome<br>
+    </header>
+
+    <!--navigation bar-->
+    <nav>
+        <a class="active" href="/mainpage.html">Home</a>
+        <a href="/Promo.html">PROMO</a>
+        <a href="/Cart.html">Cart</a>
+        <a href="/Rewards.html">Rewards</a>
+        <a href="/About Us.html">About Us</a>
+    </nav>
+</header>
+
+</nav>
+
+<body class="mainpage">
+    <body class="mainpage">
+        <div class="button-container">
+            <br><br><br><br><br><br>
+            
+            <button onclick="filterProducts('electronics')">Electronics</button>
+            <button onclick="filterProducts('jewelery')">Jewelery</button>
+            <button onclick="filterProducts('men\'s clothing')">Men's Clothing</button>
+            <button onclick="filterProducts('women\'s clothing')">Women's Clothing</button>
+        </div>
+    
+        <div id="product-cards">
+            <!-- Product cards will be inserted here -->
+        </div>
+    
+        <template id="product-card-template">
+            <div class="product-card">
+                <img src="__IMAGE_URL__" alt="Product image">
+                <h2 class="product-name">__PRODUCT_NAME__</h2>
+                <p class="product-price">$__PRODUCT_PRICE__</p>
+            </div>
+        </template>
+    
+        <script src="index.js"></script>
+        <script src="login.js"></script>
+</body>
+</html>
