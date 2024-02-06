@@ -111,6 +111,7 @@
     text-decoration: underline;
 }
 
+/*HEADER*/
 header
 {
   font-family: 'Kavivanar', cursive;
@@ -126,6 +127,7 @@ header
   z-index: 1000;
 }
 
+/*NAV BAR*/
 nav{
     overflow:hidden;
     height: auto;
@@ -148,6 +150,7 @@ nav{
     font-size: large;
 }
 
+/*BODY*/
 body{
     box-sizing:border-box;
     font-family:"Poppins",sans-serif;
@@ -155,6 +158,7 @@ body{
     padding:0;
 }
 
+/*HOME PAGE*/
 .row-home-products{
     display: flex;
     text-align: center;
@@ -165,6 +169,7 @@ body{
     padding: 50px;
 }
 
+/*PROMO PAGE*/
 .row-promo{
     display: flex;
     text-align: center;
@@ -175,3 +180,84 @@ body{
     margin-top: 100px;
 }
 
+
+/*REWARDS PAGE*/
+.claim-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.claim-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.claimed {
+    background-color: #aa99e4;
+    cursor: not-allowed;
+}
+.discount {
+    font-size: 14px;
+    margin-left: 5px;
+}
+/* Styles for the voucher section */
+.voucher-section {
+    padding: 10px;
+    text-align: center;
+}
+
+.vouchers {
+    padding: 35px;
+    margin: 50px;
+    background-color: antiquewhite;
+    border-radius: 15px;
+}
+
+/* Styles for dropdown button */
+.dropdown {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dropdown-button {
+    padding: 12px 16px; /* Match the padding of dropdown content buttons */
+    background-color:aquamarine; /* Set background to transparent */
+    border: none; /* Remove border */
+    cursor: pointer; /* Set cursor to pointer */
+}
+
+.dropdown-button:hover {
+    background-color:blueviolet; /* Change background color on hover */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color:darkorange;
+}
