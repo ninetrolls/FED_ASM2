@@ -21,11 +21,66 @@
         <a href="/Index.html">Home</a>
         <a href="/Promo.html">PROMO</a>
         <a href="/Cart.html">Cart</a>
-        <a class="active" href="">Rewards</a>
+        <a class="active" href="Rewards.html">Rewards</a>
         <a href="/About Us.html">About Us</a>
     </nav>
 
     <body>
+        <div class="dropdown">
+            <button class="dropdown-button">Vouchers</button>
+            <div class="dropdown-content">
+                <a href="#claimedVouchers">Your Vouchers</a>
+                <a href="#claim-section">Claim Vouchers</a>
+            </div>
+        </div>
 
+        <div class="claim-section" id="claim-section">
+            <h1>Claim Vouchers</h1>
+
+            <div class="vouchers" id="voucher1">
+                <h2>Storewide Discount</h2>
+                <p>Use this voucher to get a discount on all products.</p>
+                <button class="claim-button" onclick="claimVoucher(this, 'voucher1')">Claim <span class="discount" id="discount1"></span> Discount Voucher</button>
+            </div>
+
+            <div class="vouchers" id="voucher2">
+                <h2>Electronics Discount</h2>
+                <p>Use this voucher to get a discount on all Electronic products.</p>
+                <button class="claim-button" onclick="claimVoucher(this, 'voucher2')">Claim <span class="discount" id="discount2"></span> Discount Voucher</button>
+            </div>
+
+            <div class="vouchers" id="voucher3">
+                <h2>Electronics Discount</h2>
+                <p>Use this voucher to get a discount on all Electronic products.</p>
+                <button class="claim-button" onclick="claimVoucher(this, 'voucher3')">Claim <span class="discount" id="discount3"></span> Discount Voucher</button>
+            </div>
+
+            <div class="vouchers" id="voucher4">
+                <h2>Electronics Discount</h2>
+                <p>Use this voucher to get a discount on all Electronic products.</p>
+                <button class="claim-button" onclick="claimVoucher(this, 'voucher4')">Claim <span class="discount" id="discount4"></span> Discount Voucher</button>
+            </div>
+
+            <div class="vouchers" id="voucher5">
+                <h2>Electronics Discount</h2>
+                <p>Use this voucher to get a discount on all Electronic products.</p>
+                <button class="claim-button" onclick="claimVoucher(this, 'voucher5')">Claim <span class="discount" id="discount5"></span> Discount Voucher</button>
+            </div>
+
+            <!-- Add more vouchers div as needed -->
+        </div>
+
+        <hr>
+
+        <div class="voucher-section">
+            <h1>Your Vouchers</h1>
+
+            <br>
+
+            <ul id="claimedVouchers">
+                <!-- This is where the claimed vouchers will be displayed -->
+            </ul>
+        </div>
+        <script src="Index.js"></script>
     </body>
 </html>
