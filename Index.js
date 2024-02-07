@@ -48,6 +48,7 @@ function displayAllProducts() {
     displayProducts(allProducts);
 }
 
+/*
 //ADD TO CART FEATURE
 // Get all the "Add to Cart" buttons
 const addToCartButtons = document.querySelectorAll('.add-to-cart');
@@ -130,3 +131,5 @@ function displaySuccessMessage(message) {
         successMessage.remove();
     }, 3000);
 }
+*/
+

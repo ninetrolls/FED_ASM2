@@ -73,13 +73,35 @@
                 <img src="__IMAGE_URL__" alt="Product image">
                 <h2 class="product-name">__PRODUCT_NAME__</h2>
                 <p class="product-price">$__PRODUCT_PRICE__</p>
-                <button style="background-color:rgb(255, 255, 255);color: rgb(0, 0, 0); cursor:pointer;border-radius: 1em;padding: 7px;font-size: 15px;border-color: white;"class="add-to-cart">Add to Cart</button>
-                
-                    
+                <button style="background-color:rgb(255, 255, 255);color: rgb(0, 0, 0); cursor:pointer;border-radius: 1em;padding: 7px;font-size: 15px;border-color: white;"
+                class="add-to-cart" data-name="__PRODUCT_NAME__" data-price="__PRODUCT_PRICE__">Add to Cart</button>
             </div>
         </template>
+
     
         <script src="index.js"></script>
         <script src="login.js"></script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+                addToCartButtons.forEach(button => {
+                    button.addEventListener("click", function() {
+                        const productName = this.getAttribute("data-name");
+                        const productPrice = parseInt(this.getAttribute("data-price"));
+
+                        // Update cart data in local storage
+                        let cartData = JSON.parse(localStorage.getItem("cart")) || [];
+                        cartData.push({ name: productName, price: productPrice });
+                        localStorage.setItem("cart", JSON.stringify(cartData));
+
+                        // Alert the user that the item has been added to the cart
+                        alert(`${productName} has been added to the cart!`);
+                    });
+                });
+            });
+
+        </script>
 </body>
 </html>

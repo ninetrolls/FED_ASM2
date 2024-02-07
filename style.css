@@ -325,11 +325,7 @@ body{
     margin: 0 auto;
     margin-top: 150px;
     padding: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: rgb(196, 196, 196);
-    color: black; /*color of all the letters and numbers*/
-    border-radius: 20px;
+    
 }
 
 #cart h2 {
@@ -345,10 +341,14 @@ body{
 
 #cart-items li {
     margin-bottom: 50px;
-    padding: 10px;
     display: flex;
+    padding: 20px;
     justify-content: space-between;
     align-items: center;
+    border-radius: 5px;
+    background-color: black;
+    color: white; /*color of all the letters and numbers*/
+    border-radius: 20px;
 }
 
 .product-name{
@@ -360,24 +360,23 @@ body{
 }
 
 button {
-    padding: 5px 10px;
+    padding: 10px;
     font-size: 14px;
     cursor: pointer;
-    background-color: blueviolet;
-    color: white; /*this is the + - color*/
+    background-color: white;
+    color: black; /*this is the + - color*/
 }
 
 button:hover {
-    background-color: #0015ff;
+    background-color: gray;
 }
 
 .total-display{
-    bottom: 0;
+    margin: 30px;
     padding: 30px;
-    width: 100%;
     background-color: black;
     color: white;
-    position: fixed;
+    position: sticky;
 }
 
 /*REWARDS PAGE*/
