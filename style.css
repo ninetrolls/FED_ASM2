@@ -239,6 +239,22 @@ body.mainpage {
     display: inline-block; /* Display as inline block to fit content */
 
 }
+ /*when webssite is in mobile view*/
+ @media(max-width:768px){
+    .product-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% - 20px); /* Set the width to 100% */
+        height: 360px;
+        border: 1px solid #ccc;
+        background-color: rgb(226, 223, 223);
+        border-radius: 5px;
+        margin: 10px 0; /* Remove the right margin */
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}
 
 /*HEADER*/
 header
@@ -477,13 +493,7 @@ button:hover {
 }
 
 /*ABOUT US PAGE*/
-.aboutUs-description{
-    margin: auto;
-    margin-top: 150px;
-    padding: 20px;
-    max-width: 50%;
-    text-align: center;
-}
+
 /*instagram button*/
 .insta{
     position: fixed;
@@ -514,3 +524,26 @@ button:hover {
     color: white;
     font-size: 22px;
 }
+body.About{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 450px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    color: black;
+    font-weight: bold;}
+    @media(max-width:768px){
+    body.About {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+        padding: 40px;
+        padding-top: 50px;
+        box-sizing: border-box;
+        color: black;
+        font-weight: bold;
+    }
+    }
