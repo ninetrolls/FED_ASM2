@@ -1,17 +1,13 @@
-//HOMEPAGE
-
 // Get the product card template
 const template = document.getElementById('product-card-template');
 let allProducts; // To store all products
 
 // Fetch all products from the API
-fetch('https://fakestoreapi.com/products')
-  .then(res => res.json())
-  .then(products => {
-    allProducts = products; // Store all products
-    displayProducts(products); // Display all products initially
-  })
-  .catch(error => console.error(error));
+async function fetchProducts() {
+    const response = await fetch('https://fakestoreapi.com/products');
+    const products = await response.json();
+    return products;
+}
 
 // Function to filter products based on category
 function filterProducts(category) {
@@ -31,14 +27,30 @@ function displayProducts(products) {
         card.querySelector('.product-name').textContent = product.title;
         card.querySelector('.product-price').textContent = `$${product.price}`;
 
+        const addToCartButton = card.querySelector('.add-to-cart');
+        addToCartButton.addEventListener('click', () => {
+            addToCart(product);
+        });
+
         productList.appendChild(card);
     });
 }
 
+// Add product to cart
+function addToCart(product) {
+    // Update cart data in local storage
+    let cartData = JSON.parse(localStorage.getItem("cart")) || [];
+    cartData.push({ name: product.title, price: product.price });
+    localStorage.setItem("cart", JSON.stringify(cartData));
+
+    // Alert the user that the item has been added to the cart
+    alert(`${product.title} has been added to the cart!`);
+}
+
 // Initialize the page
 async function init() {
-    const products = await fetchProducts();
-    displayProducts(products);
+    allProducts = await fetchProducts();
+    displayProducts(allProducts);
 }
 
 init();
@@ -47,6 +59,8 @@ init();
 function displayAllProducts() {
     displayProducts(allProducts);
 }
+
+
 
 /*
 //ADD TO CART FEATURE
