@@ -319,6 +319,66 @@ body{
     margin-top: 100px;
 }
 
+/* CART PAGE */
+#cart {
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(196, 196, 196);
+    color: black; /*color of all the letters and numbers*/
+    border-radius: 20px;
+}
+
+#cart h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin-bottom: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-name{
+    margin-right: 10px;
+}
+
+.quantity {
+    margin: 0 10px;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white; /*this is the + - color*/
+}
+
+button:hover {
+    background-color: #0015ff;
+}
+
+.total-display{
+    bottom: 0;
+    margin: 30px;
+    padding: 30px;
+    width: 95%;
+    background-color: aquamarine;
+    position: fixed;
+}
 
 /*REWARDS PAGE*/
 .claim-section {
