@@ -11,97 +11,53 @@
     <link rel="icon" href="/images/logo3.png"> 
 </head>
 
-
-    <!--heading-->
-    <header>
-        <i class='bx bxl-sass'style='font-size: 60px;'></i>Sinaturehome<br>
-    </header>
-
-    <!--navigation bar-->
-    <nav>
-        <a class="active" href="/mainpage.html">Home</a>
-        <a href="/Promo.html">PROMO</a>
-        <a href="/Cart.html">Cart</a>
-        <a href="/Rewards.html">Rewards</a>
-        <a href="/About Us.html">About Us</a>
-    </nav>
+   <!--heading-->
+<header>
+    <i class='bx bxl-sass'style='font-size: 60px;'></i>Sinaturehome<br>
 </header>
 
+<!--navigation bar-->
+<nav>
+    <a class="active" href="/mainpage.html">Home</a>
+    <a href="/Promo.html">PROMO</a>
+    <a href="/Cart.html">Cart</a>
+    <a href="/Rewards.html">Rewards</a>
+    <a href="/About Us.html">About Us</a>
 </nav>
 
-<body class="mainpage" >
-    
-       
-
-        <div class="button-container"><br><br>
-            
-            
-            <div class="filter-box">
-                <p style="font-family: 'Kavivanar', cursive; ">Filter</p>
-            </div>
-            
-           
-                <button style="background-color:gray;color: white; cursor:pointer;border-radius: 1em;padding: 7px;font-size: 15px;border-color: white;" onclick="displayAllProducts()">All products</button>
-          
-
-                <button style="background-color:gray;color: white; cursor:pointer;border-radius: 1em;padding: 7px;font-size: 15px;border-color: white;" onclick="filterProducts('electronics')">Electronics</button>
-
-            
-
-                <button style="background-color:gray;color: white; cursor:pointer;border-radius: 1em;padding: 7px;font-size: 15px;border-color: white;" onclick="filterProducts('jewelery')">Jewelery</button>
-
-            
-
-
-                <button style="background-color:gray;color: white; cursor:pointer;border-radius: 1em;padding: 7px;font-size: 15px;border-color: white;"onclick="filterProducts('men\'s clothing')">Men's Clothing</button>
+<body class="mainpage" style="margin-top: 140px;">
  
-            
 
-
-                <button style="background-color:gray;color: white; cursor:pointer;border-radius: 1em;padding: 7px;font-size: 15px;border-color: white;" onclick="filterProducts('women\'s clothing')">Women's Clothing</button>
-        
-            
-            
+    <div class="button-container">
+        <div class="filter-box">
+            <p style="font-family: 'Kavivanar', cursive; ">Filter</p>
         </div>
-    
-        <div id="product-cards">
-            <!-- Product cards will be inserted here -->
+
+        <button style="background-color:gray;color: white; cursor:pointer;border-radius: 1em;padding: 7px;font-size: 15px;border-color: white;" onclick="displayAllProducts()">All products</button>
+
+        <button style="background-color:gray;color: white; cursor:pointer;border-radius: 1em;padding: 7px;font-size: 15px;border-color: white;" onclick="filterProducts('electronics')">Electronics</button>
+
+        <button style="background-color:gray;color: white; cursor:pointer;border-radius: 1em;padding: 7px;font-size: 15px;border-color: white;" onclick="filterProducts('jewelery')">Jewelery</button>
+
+        <button style="background-color:gray;color: white; cursor:pointer;border-radius: 1em;padding: 7px;font-size: 15px;border-color: white;"onclick="filterProducts('men\'s clothing')">Men's Clothing</button>
+
+        <button style="background-color:gray;color: white; cursor:pointer;border-radius: 1em;padding: 7px;font-size: 15px;border-color: white;" onclick="filterProducts('women\'s clothing')">Women's Clothing</button>
+    </div>
+
+    <div id="product-cards">
+        <!-- Product cards will be inserted here -->
+    </div>
+
+    <template id="product-card-template">
+        <div class="product-card">
+            <img src="__IMAGE_URL__" alt="Product image">
+            <h2 class="product-name">__PRODUCT_NAME__</h2>
+            <p class="product-price">$__PRODUCT_PRICE__</p>
+            <button style="background-color:rgb(255, 255, 255);color: rgb(0, 0, 0); cursor:pointer;border-radius: 1em;padding: 7px;font-size: 15px;border-color: white;"
+            class="add-to-cart" data-name="__PRODUCT_NAME__" data-price="__PRODUCT_PRICE__">Add to Cart</button>
         </div>
-    
-        <template id="product-card-template">
-            <div class="product-card">
-                <img src="__IMAGE_URL__" alt="Product image">
-                <h2 class="product-name">__PRODUCT_NAME__</h2>
-                <p class="product-price">$__PRODUCT_PRICE__</p>
-                <button style="background-color:rgb(255, 255, 255);color: rgb(0, 0, 0); cursor:pointer;border-radius: 1em;padding: 7px;font-size: 15px;border-color: white;"
-                class="add-to-cart" data-name="__PRODUCT_NAME__" data-price="__PRODUCT_PRICE__">Add to Cart</button>
-            </div>
-        </template>
+    </template>
 
-    
-        <script src="index.js"></script>
-        <script src="login.js"></script>
-
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                const addToCartButtons = document.querySelectorAll(".add-to-cart");
-
-                addToCartButtons.forEach(button => {
-                    button.addEventListener("click", function() {
-                        const productName = this.getAttribute("data-name");
-                        const productPrice = parseInt(this.getAttribute("data-price"));
-
-                        // Update cart data in local storage
-                        let cartData = JSON.parse(localStorage.getItem("cart")) || [];
-                        cartData.push({ name: productName, price: productPrice });
-                        localStorage.setItem("cart", JSON.stringify(cartData));
-
-                        // Alert the user that the item has been added to the cart
-                        alert(`${productName} has been added to the cart!`);
-                    });
-                });
-            });
-
-        </script>
+    <script src="index.js"></script>
 </body>
 </html>
