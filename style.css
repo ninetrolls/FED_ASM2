@@ -112,12 +112,16 @@
 }
 
 
+
 /* START OF MAIN PAGE*/
 
 body.mainpage {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    
+    margin: 100px;
 }
 
 .header2 {
@@ -144,17 +148,20 @@ body.mainpage {
 .product-card {
     display: flex;
     flex-direction: column;
-    
-  
     align-items: center;
-    width: 200px;
-    height: 300px;
+    width: calc(20% - 20px); /* Change this value to 33.333% */
+    height: 360px;
     border: 1px solid #ccc;
+    background-color: rgb(226, 223, 223);
     border-radius: 5px;
-    margin: 10px;
+    margin: 10px 10px 10px 0; /* Change the margin to have a left margin of 0 for every third element */
     padding: 10px;
     box-sizing: border-box;
-  }
+}
+#product-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
   
   .product-card img {
     width: 100px;
@@ -169,11 +176,62 @@ body.mainpage {
     text-align: center;
   }
   
-.product-card p {
+  .product-card p {
     margin: 5px 0;
     font-size: 14px;
     font-weight: bold;
     text-align: center;
+  }
+  /*FILTER PORTION*/
+  .filter-box {
+    border: 2px solid rgb(255, 255, 255); /* Border style */
+    display: inline-block; /* Display as inline block to fit content */
+    padding: 5px; /* Padding to add space around the text */
+    font-size: 15px;
+    color: #f9f9f9;
+    background-color: grey;
+    
+}
+.all{
+    border: 2px solid rgb(255, 255, 255); /* Border style */
+    display: inline-block; /* Display as inline block to fit content */
+    padding: 5px; /* Padding to add space around the text */
+    font-size: 15px;
+    color: #f9f9f9;
+    border-radius: 1em;
+    background-color: grey;
+}
+.electronics{
+    border: 2px solid rgb(255, 255, 255); /* Border style */
+    display: inline-block; /* Display as inline block to fit content */
+    padding: 5px; /* Padding to add space around the text */
+    font-size: 15px;
+    color: #f9f9f9;
+    border-radius: 1em;
+    background-color: grey;
+}
+.jewelery
+{
+    border: 2px solid rgb(255, 255, 255); /* Border style */
+    display: inline-block; /* Display as inline block to fit content */
+    padding: 5px; /* Padding to add space around the text */
+    font-size: 15px;
+    color: #f9f9f9;
+    border-radius: 1em;
+    background-color: grey;
+}
+.men{
+    border: 2px solid rgb(255, 255, 255); /* Border style */
+    display: inline-block; /* Display as inline block to fit content */
+    padding: 5px; /* Padding to add space around the text */
+    font-size: 15px;
+    color: #f9f9f9;
+    border-radius: 1em;
+    background-color: grey;
+}
+.women{
+    display: inline-block; /* Display as inline block to fit content */
+
 }
 
 /*HEADER*/
@@ -198,7 +256,8 @@ nav{
     height: auto;
     text-align: center;
     color: black;
-    background-color: white;
+    margin-left: 00px;
+    background-color: rgb(138, 138, 138);
     position: fixed;
     padding: 10px;
     top: 80px;
@@ -214,6 +273,21 @@ nav{
     text-decoration: none;
     font-size: large;
 }
+ /*NAV MAIN BAR*/
+ .mainpage nav{
+    overflow:hidden;
+    height: auto;
+    text-align: center;
+    color: black;
+    margin-left: -100px;
+    background-color: rgb(138, 138, 138);
+    position: fixed;
+    padding: -100px;
+    top: 80px;
+    width: 100%;
+    z-index: 10000;
+}   
+
 
 /*BODY*/
 body{

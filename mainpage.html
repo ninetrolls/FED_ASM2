@@ -7,6 +7,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Kalnia:wght@300&family=Kavivanar&family=Orbitron:wght@700&family=Raleway:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 
@@ -27,15 +28,39 @@
 
 </nav>
 
-<body class="mainpage">
-    <body class="mainpage">
-        <div class="button-container">
-            <br><br><br><br><br><br>
+<body class="mainpage" >
+    
+       
+
+        <div class="button-container"><br><br>
             
-            <button onclick="filterProducts('electronics')">Electronics</button>
-            <button onclick="filterProducts('jewelery')">Jewelery</button>
-            <button onclick="filterProducts('men\'s clothing')">Men's Clothing</button>
-            <button onclick="filterProducts('women\'s clothing')">Women's Clothing</button>
+            
+            <div class="filter-box">
+                <p style="font-family: 'Kavivanar', cursive; ">Filter</p>
+            </div>
+            
+           
+                <button style="background-color:gray;color: white; cursor:pointer;border-radius: 1em;padding: 7px;font-size: 15px;border-color: white;" onclick="displayAllProducts()">All products</button>
+          
+
+                <button style="background-color:gray;color: white; cursor:pointer;border-radius: 1em;padding: 7px;font-size: 15px;border-color: white;" onclick="filterProducts('electronics')">Electronics</button>
+
+            
+
+                <button style="background-color:gray;color: white; cursor:pointer;border-radius: 1em;padding: 7px;font-size: 15px;border-color: white;" onclick="filterProducts('jewelery')">Jewelery</button>
+
+            
+
+
+                <button style="background-color:gray;color: white; cursor:pointer;border-radius: 1em;padding: 7px;font-size: 15px;border-color: white;"onclick="filterProducts('men\'s clothing')">Men's Clothing</button>
+ 
+            
+
+
+                <button style="background-color:gray;color: white; cursor:pointer;border-radius: 1em;padding: 7px;font-size: 15px;border-color: white;" onclick="filterProducts('women\'s clothing')">Women's Clothing</button>
+        
+            
+            
         </div>
     
         <div id="product-cards">
@@ -47,6 +72,9 @@
                 <img src="__IMAGE_URL__" alt="Product image">
                 <h2 class="product-name">__PRODUCT_NAME__</h2>
                 <p class="product-price">$__PRODUCT_PRICE__</p>
+                <button style="background-color:rgb(255, 255, 255);color: rgb(0, 0, 0); cursor:pointer;border-radius: 1em;padding: 7px;font-size: 15px;border-color: white;"class="add-to-cart">Add to Cart</button>
+                
+                    
             </div>
         </template>
     
