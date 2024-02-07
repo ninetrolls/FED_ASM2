@@ -247,11 +247,12 @@ body{
 
 /*REWARDS PAGE*/
 .claim-section {
+    margin-top: 150px;
     margin-bottom: 20px;
     text-align: center;
 }
 .claim-button {
-    background-color: #4CAF50;
+    background-color: blue;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -264,7 +265,8 @@ body{
     border-radius: 5px;
 }
 .claimed {
-    background-color: #aa99e4;
+    background-color:rgb(176, 176, 255);
+    color: black;
     cursor: not-allowed;
 }
 .discount {
@@ -280,7 +282,9 @@ body{
 .vouchers {
     padding: 35px;
     margin: 50px;
-    background-color: antiquewhite;
+    margin-top: 25px;
+    background-color: black;
+    color: white;
     border-radius: 15px;
 }
 
@@ -293,19 +297,21 @@ body{
 
 .dropdown-button {
     padding: 12px 16px; /* Match the padding of dropdown content buttons */
-    background-color:aquamarine; /* Set background to transparent */
-    border: none; /* Remove border */
+    background-color:black;
+    color: white;
+    border: 1px solid white;
     cursor: pointer; /* Set cursor to pointer */
 }
 
 .dropdown-button:hover {
-    background-color:blueviolet; /* Change background color on hover */
+    background-color:white; /* Change background color on hover */
+    color: black;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: black;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -316,12 +322,13 @@ body{
 }
 
 .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color:darkorange;
+    background-color:white;
+    color: black;
 }

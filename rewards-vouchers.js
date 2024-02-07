@@ -21,6 +21,7 @@ function claimVoucher(button, voucherId) {
     
     // Create a new list item to display the claimed voucher
     var listItem = document.createElement("li");
+    listItem.style.fontWeight = "bold";
     listItem.textContent = "You have CLAIMED your " + discount + " discount voucher!";    
 
     // Add the claimed voucher to the list of claimed vouchers
