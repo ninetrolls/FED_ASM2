@@ -7,6 +7,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Kalnia:wght@300&family=Kavivanar&family=Orbitron:wght@700&family=Raleway:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 </head>
 <body class="login">
     <header class="header">
@@ -23,17 +24,20 @@
                 <input type="password" name="password" placeholder="Password" required>
                 <i class='bx bxs-lock-alt'></i>
             </div>
-            <div class ="remember-forgot">
-                        
+            <div class ="remember-forgot">           
                 <a href ="signup.html">New member</a>
-                
             </div>
-            <button type="submit" class="btn">Login</button>
+            <button style="cursor:pointer;" type="submit" class="btn">login</button>
         </form>
     </div>
+    <!-- Lottie Animation Player -->
+    <dotlottie-player id="lottie-animation" src="https://lottie.host/8a8a933f-1533-4274-8bec-7bf16516bbc3/wIgf0obfDm.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop></dotlottie-player>
+
+    <!-- Other scripts -->
     <script src="index.js"></script>
     <script src="login.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/node-fetch/dist/node-fetch.min.js"></script>
+
+
 </body>
 </html>
