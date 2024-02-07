@@ -120,8 +120,11 @@ body.mainpage {
     align-items: center;
     min-height: 100vh;
     font-family: 'Raleway', sans-serif;
-    
     margin: 100px;
+}
+
+.mainpage{
+    margin-top: 150px;
 }
 
 .header2 {
