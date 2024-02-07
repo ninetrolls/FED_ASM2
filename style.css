@@ -111,6 +111,70 @@
     text-decoration: underline;
 }
 
+
+/* START OF MAIN PAGE*/
+
+body.mainpage {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header2 {
+    font-family: 'Kavivanar', cursive;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.8rem 5%;
+    background: black;
+    font-size: 45px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+
+
+  
+
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    
+  
+    align-items: center;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .product-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .product-card h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .product-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
 /*HEADER*/
 header
 {
