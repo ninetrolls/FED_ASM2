@@ -327,6 +327,7 @@ body{
     max-width: 50%;
     margin: 0 auto;
     margin-top: 150px;
+    margin-bottom: 120px;
     padding: 20px;
     
 }
@@ -375,11 +376,13 @@ button:hover {
 }
 
 .total-display{
-    margin: 30px;
-    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    padding: 50px;
+    width: 100%;
     background-color: black;
     color: white;
-    position: sticky;
+    position: fixed;
 }
 
 /*REWARDS PAGE*/
