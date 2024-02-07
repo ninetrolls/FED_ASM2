@@ -169,12 +169,13 @@ body.mainpage {
     text-align: center;
   }
   
-  .product-card p {
+.product-card p {
     margin: 5px 0;
     font-size: 14px;
     font-weight: bold;
     text-align: center;
-  }
+}
+
 /*HEADER*/
 header
 {
@@ -331,4 +332,13 @@ body{
 .dropdown-content a:hover {
     background-color:white;
     color: black;
+}
+
+/*ABOUT US PAGE*/
+.aboutUs-description{
+    margin: auto;
+    margin-top: 150px;
+    padding: 20px;
+    max-width: 50%;
+    text-align: center;
 }
