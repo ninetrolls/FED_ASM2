@@ -47,15 +47,15 @@ Feature 1 - A mini game can be implemented for users to gain points and claim vo
 
 # Technologies Used
 1) Visual Studio Code<br>
-   https://code.visualstudio.com/
+   https://code.visualstudio.com/<br>
    This is the main editor used to write the code for the entire project.
    
 2) Figma<br>
-   https://www.figma.com/downloads/
+   https://www.figma.com/downloads/<br>
    This is the software used in order to make the wireframes needed to plan the layout of the website.
 
 3) Fake store API<br>
-   https://fakestoreapi.com/products
+   https://fakestoreapi.com/products<br>
    This is the API used in order to get the pictures and prices of the products.
 
 4) HTML<br>
