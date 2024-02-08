@@ -562,6 +562,21 @@ button:hover {
     color: white;
     font-size: 22px;
 }
+ /*NAV About BAR*/
+ .About nav{
+    overflow:hidden;
+    height: auto;
+    text-align: center;
+    color: black;
+    margin-left: -100px;
+    background-color: rgb(138, 138, 138);
+    position: fixed;
+    padding: -100px;
+    top: 80px;
+    width: 100%;
+    z-index: 10000;
+}   
+
 body.About{
     display:flex;
     justify-content: center;
