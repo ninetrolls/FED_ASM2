@@ -375,6 +375,8 @@ body{
 .col-promo{
     flex: 100%;
     margin-top: 100px;
+    width: 200px;
+    height: 200px;
 }
 
 /* CART PAGE */
