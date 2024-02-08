@@ -1,6 +1,8 @@
 # FED_ASM2
 This repository is for Meng Zhi and Hai Wen's FED Assignment 2. This project is basically a ecommerce website that allows the user to browse through the products sold on the website. The website allows the user to claim vouchers and allow the users to add products to cart. The users are then able to edit the wuantity of the products they have in their cart and will be able to see the total price of the products in their cart get tallied up. The user would be able to sign up and log into the website. 
 
+<hr>
+
 # Design Process
 We have used the websites of other ecommerce websites as our inspiration to our website aethetics and layout. This website is mostly aimed towards millenials and teenagers, as such, we have decided to go with the main colors black and white in order to appeal to our target audience. We ensured that the website would not seem cluttered and is very minimalistic. We think that this would appeal to our target audience and allow them to be more attracted to using our website. 
 
@@ -11,8 +13,10 @@ The cart page is equipped with functions that allows the users to easily edit th
 User Stories: 
 1) As a user that is in my teens, I want to be able to easily browse through the products on any ecommerce page and be able to easily filter out products that I will be more interested in. This will allow me to focus more on the things I am more interested in.
 
-This is the wireframe link:
+This is the wireframe link:<br>
 https://www.figma.com/file/pybchirpnycuWkPNk3SasM/FED-ASM-2?type=design&node-id=0%3A1&mode=design&t=UgrG3BPoCffFrlyH-1
+
+<hr>
 
 # Existing Features 
 Feature 1 - The user will be able to log into the website using their own personal username and password. The user would need to press the login button and it would direct them to the Home page.
@@ -39,26 +43,28 @@ Feature 10 - On the About Us page, the user will be able to be directed to the s
 # Additional features to be implemented in the future
 Feature 1 - A mini game can be implemented for users to gain points and claim vouchers.
 
+<hr>
+
 # Technologies Used
-1) Visual Studio Code
+1) Visual Studio Code<br>
    https://code.visualstudio.com/
    This is the main editor used to write the code for the entire project.
    
-2) Figma
+2) Figma<br>
    https://www.figma.com/downloads/
    This is the software used in order to make the wireframes needed to plan the layout of the website.
 
-3) Fake store API
+3) Fake store API<br>
    https://fakestoreapi.com/products
    This is the API used in order to get the pictures and prices of the products.
 
-4) HTML
+4) HTML<br>
    HTML was used to create the structures of the webpages and the buttons.
    
-5) CSS
+5) CSS<br>
    CSS was used to style the HTML structures, including the layout, fonts and colors.
    
-6) JavaScript
+6) JavaScript<br>
    This project utitlizes JavaScript for various functions such as:
    - DOM Manipulation
    - Event Handling
@@ -66,41 +72,43 @@ Feature 1 - A mini game can be implemented for users to gain points and claim vo
    - LocalStorage
    - Conditional Statements and Loops
 
-7) Fetch API
+7) Fetch API<br>
    Used to make the HTTP requests to the external API
 
-8) RESTful API
+8) RESTful API<br>
    The code interacts with a RESTful API for user authentication and product data retrieval.
 
-9) JSON
+9) JSON<br>
    JSON is used for exchanging data between the client and server. The code parses JSON responses received from API requests and stringifies JavaScript objects for storage in localStorage.
 
-10) ES6 Features
+10) ES6 Features<br>
     The code utilizes features introduced in ECMAScript 6 (ES6) such as const and let for variable declarations, arrow functions (() => {}), template literals (``), and object destructuring.
 
-11) Promises
+11) Promises<br>
     Promises are used for handling asynchronous operations and managing the flow of data returned from API requests.
 
-12) Event-driven Programming
+12) Event-driven Programming<br>
     The code follows an event-driven programming paradigm, where actions performed by the user (e.g., clicking buttons, submitting forms) trigger corresponding event handlers.
 
-13) Error Handling
+13) Error Handling<br>
     Error handling mechanisms such as .catch() are implemented to handle errors that may occur during API requests.
 
-14) Conditional Rendering
+14) Conditional Rendering<br>
     The code conditionally renders elements based on certain conditions (e.g., displaying login/signup forms, showing success messages, updating cart quantity).
 
-15) Navigation
+15) Navigation<br>
     JavaScript is used for navigating users to different pages within the application by modifying the window.location.href.
 
-16) Random Number Generation
+16) Random Number Generation<br>
     JavaScript's Math.random() function is used to generate random discount percentages for voucher claims.
 
-17) Template Cloning
+17) Template Cloning<br>
     The code clones HTML templates using cloneNode() to dynamically create product cards for display.
 
-18) Form Data Handling
+18) Form Data Handling<br>
     The code uses FormData to extract form data (e.g., username and password) submitted by users.
+
+<hr>
 
 # Credits 
 Content
