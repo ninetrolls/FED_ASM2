@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const cartItemsList = document.getElementById("cart-items");
     const totalPriceElement = document.getElementById("total-price");
+    const discountElement = document.getElementById("discount");
 
     // Function to update cart quantity and total price
     function updateCartQuantity(item, quantity) {
@@ -20,7 +21,21 @@ document.addEventListener("DOMContentLoaded", function() {
         cartData.forEach(item => {
             totalPrice += item.price * item.quantity;
         });
+
+        // Apply $5 discount for total over $200
+        let discountApplied = 0;
+        let discountMessage = "";
+
+        if (totalPrice > 200) {
+            discountApplied += 5; // Apply $7 discount for total over $200
+            discountMessage += `Discount (Total > $200): $-7 `;
+        }
+
+        totalPrice -= discountApplied; // Deduct total discounts
+
+        // Update elements
         totalPriceElement.innerText = totalPrice.toFixed(2);
+        discountElement.innerText = discountMessage;
 
         // Update local storage
         localStorage.setItem("cart", JSON.stringify(cartData));
@@ -69,5 +84,19 @@ document.addEventListener("DOMContentLoaded", function() {
     cartData.forEach(item => {
         totalPrice += item.price * item.quantity;
     });
+
+    // Apply $5 discount for total over $200
+    let discountApplied = 0;
+    let discountMessage = "";
+
+    if (totalPrice > 200) {
+        discountApplied += 7; // Apply $5 discount for total over $200
+        discountMessage += `Discount (Total > $200): $-7 `;
+    }
+
+    totalPrice -= discountApplied; // Deduct total discounts
+
+    // Update elements
     totalPriceElement.innerText = totalPrice.toFixed(2);
+    discountElement.innerText = discountMessage;
 });
