@@ -104,6 +104,7 @@ Feature 1 - A mini game can be implemented for users to gain points and claim vo
 
 # Credits 
 Content
+<br>
 The images, name and pricing of the products used in the Home page are fetched from the below linked API:
 https://fakestoreapi.com/products
 
@@ -113,4 +114,5 @@ https://chat.openai.com/c/3b21d3d3-76a2-4a29-843c-ecaa598303a3
 Code for the JavaScripting done to the rewards-vouchers.js was fixed and achieved with the help of
 
 Acknowledgements
+<br>
 This project was inspired from various ecommerce websites with very mainstream layouts done. 
