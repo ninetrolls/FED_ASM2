@@ -1,6 +1,9 @@
 # FED_ASM2
 This repository is for Meng Zhi and Hai Wen's FED Assignment 2. This project is basically a ecommerce website that allows the user to browse through the products sold on the website. The website allows the user to claim vouchers and allow the users to add products to cart. The users are then able to edit the wuantity of the products they have in their cart and will be able to see the total price of the products in their cart get tallied up. The user would be able to sign up and log into the website. 
 
+Github Page Link:<br>
+https://ninetrolls.github.io/FED_ASM2/
+
 <hr>
 
 # Design Process
