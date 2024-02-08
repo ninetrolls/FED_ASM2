@@ -11,8 +11,7 @@ The cart page is equipped with functions that allows the users to easily edit th
 User Stories: 
 1) As a user that is in my teens, I want to be able to easily browse through the products on any ecommerce page and be able to easily filter out products that I will be more interested in. This will allow me to focus more on the things I am more interested in.
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory) Include the Adobe XD wireframe as a folder. You can include the XD share url.
-Wireframe link:
+This is the wireframe link:
 https://www.figma.com/file/pybchirpnycuWkPNk3SasM/FED-ASM-2?type=design&node-id=0%3A1&mode=design&t=UgrG3BPoCffFrlyH-1
 
 # Existing Features 
