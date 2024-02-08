@@ -110,7 +110,10 @@
 .register-link p a:hover{
     text-decoration: underline;
 }
-
+#lottie-animation
+ {
+    display: none;
+}
 
 
 /* START OF MAIN PAGE*/
@@ -236,7 +239,50 @@ body.mainpage {
     display: inline-block; /* Display as inline block to fit content */
 
 }
-
+ /*when webssite is in mobile view*/
+ @media(max-width:768px){
+    .product-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% - 20px); /* Set the width to 100% */
+        height: 360px;
+        border: 1px solid #ccc;
+        background-color: rgb(226, 223, 223);
+        border-radius: 5px;
+        margin: 10px 0; /* Remove the right margin */
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}
+/*back to top button*/
+.to-top {
+    background: white;
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    color:#1f1f1f;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+  }
+  
+  .to-top.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+  }
+  html{
+    scroll-behavior: smooth;
+    }
 /*HEADER*/
 header
 {
@@ -483,10 +529,57 @@ button:hover {
 }
 
 /*ABOUT US PAGE*/
-.aboutUs-description{
-    margin: auto;
-    margin-top: 150px;
-    padding: 20px;
-    max-width: 50%;
+
+/*instagram button*/
+.insta{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background:black;
+    bottom: 40px;
+    right: 50px;
+  
+    text-decoration: none;
     text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
 }
+/*tiktok button*/
+.tiktok{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background:black;
+    bottom: 40px;
+    right: 100px;
+  
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+}
+body.About{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 450px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    color: black;
+    font-weight: bold;}
+    @media(max-width:768px){
+    body.About {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+        padding: 40px;
+        padding-top: 50px;
+        box-sizing: border-box;
+        color: black;
+        font-weight: bold;
+    }
+    }
